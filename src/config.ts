@@ -1,7 +1,7 @@
 import { GatewayIntentBits, Collection, ButtonStyle } from 'discord.js';
 
 export const internal = {
-    token: 'MTE1NDAxMjQ5MzAwNjUxNjI2NQ.G-_XhN.zrXvFq8HoWgqNdkLSQ8Kd2cEBmZKcyZSry9o-g', //Bot token (https://discord.com/developers/applications)
+    token: 'MTM4OTE0Mjc0NTA3OTIxODMxNw.GMLSC9.VtJDxkb6XpSA0ecoTd5Jn-gU6gdL7CwVWHGh0k', //Bot token (https://discord.com/developers/applications)
 }
 
 export const intents: GatewayIntentBits[] | number = 131071 // all intent
@@ -10,9 +10,9 @@ export const cooldownVoiceJoin: number = 1000 // Movement delay
 
 export const settings = {
     webhook : {
-        name: 'Voice Manager' // Webhook name
+        name: 'Grow'' // Webhook name
     },
-    defaultName: '⭐ {username}',
+    defaultName: '🌃 {username}',
     color: 0x2f3136,
     style: ButtonStyle.Secondary,
     buttons: { // Emoji and their description :)
@@ -41,10 +41,10 @@ export const settings = {
          title: 'Reset User Permissions'
          },
         'owner': {
-            title: 'Transfer owner'
+            title: 'Transfer Vc Ownership'
         },
         'info': {
-        title: 'Room Information'
+        title: 'VC Info'
         }
     },
     placeholder: { // Titles for the menu when a user or channel is selected
@@ -52,6 +52,6 @@ export const settings = {
         channel: '🔷 Choose a private room'
     },
     line: true, // Line in the control panel (now it is not worth it, to put it, enter "true" instead of "false")
-    dot: false, // Emoji in front of emoji in the room panel (there is no emoji now, so type "true" instead of "false")
+    dot: true, // Emoji in front of emoji in the room panel (there is no emoji now, so type "true" instead of "false")
     debug: false // Debugging (now it is not worth it, to put it, enter "true" instead of "false")
 }
